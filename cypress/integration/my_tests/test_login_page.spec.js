@@ -8,12 +8,12 @@ describe('Login to cabinet with correct creds', () =>{
     })
 
     it('input login', () =>{
-        loginpage.inputForLogin().type('simpleexample1995+020@gmail.com')
-        .should('have.value', 'simpleexample1995+020@gmail.com')
+        loginpage.inputForLogin().type('MYEMAIL') //HERE SHOULD BE VALID EMAIL
+        .should('have.value', 'MYEMAIL') //HERE SHOULD BE VALID EMAIL
     })
 
     it('input pass', () =>{
-        loginpage.inputForPass().type('123456')
+        loginpage.inputForPass().type('PASS') //HERE SHOULD BE MY PASS
     })
 
     it('click on button Enter', () =>{

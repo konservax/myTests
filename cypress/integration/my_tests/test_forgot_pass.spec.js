@@ -13,8 +13,8 @@ describe('Check Pass recovery flow', () =>{
 
     it('typing email into email field', () =>{
         loginPage.emailFieldForRecoveryPass()
-        .type('simpleexample1995+020@gmail.com')
-        .should('have.value', 'simpleexample1995+020@gmail.com')
+        .type('MYEMAIL') //HERE SHOULD BE VALID EMAIL
+        .should('have.value', 'MYEMAIL') //HERE SHOULD BE VALID EMAIL
     })
 
     it('clicks on confirm button to send Email', () =>{
