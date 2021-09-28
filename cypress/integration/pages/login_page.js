@@ -15,6 +15,18 @@ class LoginPage {
         return cy.get('h2.title')
     }
 
+    emailFieldForReg() {
+        return cy.get('#mat-input-0')
+    }
+
+    passFieldForReg() {
+        return cy.get('#mat-input-1')
+    }
+
+    checkboxForRegistrationPage() {
+        return cy.get('#mat-checkbox-1-input')
+    }
+
 }
 
 export default LoginPage
